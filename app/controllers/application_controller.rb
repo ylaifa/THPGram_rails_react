@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
     respond_to :json
+    include ActionController::MimeResponds
 
     before_action :configure_devise_parameters, if: :devise_controller?
 
